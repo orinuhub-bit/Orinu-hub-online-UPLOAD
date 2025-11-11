@@ -4,7 +4,7 @@ const fileSchema = new mongoose.Schema({
   originalName: String,
   url: String,
   type: String,
-  uploader: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }, // à customiser selon ton modèle
+  uploader: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
   createdAt: { type: Date, default: Date.now }
 });
 
